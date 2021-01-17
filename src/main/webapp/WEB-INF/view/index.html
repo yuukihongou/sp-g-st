@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>index</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>index</h1>
+	<form action="/out" method="post" th:object="${test}">
+		<input type="text" name="test1" th:value="*{test1}" />
+		<br>
+		<br>
+		<textarea name="test2" th:value="*{test2}" ></textarea>
+		<br>
+		<br>
+		<input type="submit" />
+	</form>
+</body>
+</html>

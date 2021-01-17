@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>2</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<h1>output</h1>
+	<select th:object="${test}">
+		<option id=test1 th:value="*{test1}">[[${test.test1}]]</option>
+		<option id=test2 th:value="*{test2}">[[${test.test2}]]</option>
+	</select>
+</body>
+</html>
